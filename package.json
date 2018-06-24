@@ -1,0 +1,29 @@
+{
+  "name": "drneha",
+  "version": "1.0.0",
+  "description": "custom theme for Neha",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/style.scss style.css -w",
+    "compile:sass": "node-sass sass/style.scss css/style.comp.css ",
+    "concat:css": "concat -o styles.concat.css icon-styles.css style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 3 versions\" css/styles.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "productionready": "run-s compile:sass concat:css prefix:css compress:css",
+    "sassyserver": "run-p liveserver watch:sass",
+    "browsersync": "browser-sync start -b \"firefox\" --proxy \"localhost/wordpress\" --files [\"*.css\", \"*.php\"] ",
+    "start": "run-p browsersync watch:sass"
+  },
+  "keywords": [
+    "theme"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.8.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^5.0.0"
+  },
+  "author": "Rizwan Choudhary",
+  "license": "ISC"
+}

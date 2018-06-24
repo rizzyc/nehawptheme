@@ -1,0 +1,65 @@
+.services {
+    
+}
+
+.servicerow {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .service {
+        width: 25rem;
+        margin: 1.5rem 0;
+        min-height: 32.5rem;
+        border-radius: 3px;
+        overflow: hidden;
+        background-color: $color-grey;
+        transition: all .3s;
+        box-shadow: inherit;
+        
+        &__heading-box {
+            min-height: 10rem;
+            background-size: cover;
+            background-position: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            &--nm {
+                background-image: linear-gradient(
+                    rgba($color-primary, .7), 
+                    rgba($color-secondary, .3)), 
+                    url('http://source.unsplash.com/mod2s3-qFOc/600x600');
+            }
+            &--cm {
+                background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .3)), url('http://source.unsplash.com/v1V7XA9EGyM');
+            }
+            &--bm {
+                background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .3)), url('http://source.unsplash.com/zp72-rffT9g/600x600');
+            }
+            &--hm {
+                background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .3)), url('http://source.unsplash.com/UaO58q6ioxI/600x600');
+            }
+            &--ldc {
+                background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .3)), url('http://source.unsplash.com/qfIVXu7nxGU/600x600');
+            }
+            
+        }
+        &__heading {
+            color: white;
+            font-size: 1.8rem;
+            
+        }
+        
+        &__text {
+            padding: 0 1rem;
+            line-height: 1.8;
+        }
+
+        &:hover {
+            transform: translateX(.6rem) scale(1.08);
+            box-shadow: 1rem 1rem 1rem $color-dark-grey;
+        }
+    }
+}
