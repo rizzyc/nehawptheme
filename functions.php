@@ -121,7 +121,7 @@ add_action( 'widgets_init', 'drneha_widgets_init' );
  */
 function drneha_scripts() {
 	wp_enqueue_style( 'drneha-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'oswald', "//fonts.googleapis.com/css?family=Oswald|Raleway" );
+	wp_enqueue_style( 'oswald', "//fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed|Slabo+27px|Oswald|Raleway" );
 
 	wp_enqueue_script( 'drneha-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

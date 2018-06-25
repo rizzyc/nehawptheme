@@ -15,9 +15,19 @@
         min-height: 32.5rem;
         border-radius: 3px;
         overflow: hidden;
-        background-color: $color-grey;
+        background-color: white;
         transition: all .3s;
         box-shadow: inherit;
+        
+        &__icon {
+            position: relative;
+        }
+        &__svg {
+            height: 15rem;
+            width: 15rem;
+            fill: $color-dark-grey;
+            color: $color-dark-grey;
+            }
         
         &__heading-box {
             min-height: 10rem;
