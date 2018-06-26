@@ -1,0 +1,12 @@
+.site-footer {
+    background-color: $color-grey-light;
+    padding: 3rem;
+    
+    .site-info {
+        a:link,
+        a:visited,
+        a:active {
+            color: $color-grey-white;
+        }
+    }
+}

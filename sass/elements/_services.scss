@@ -19,14 +19,11 @@
         transition: all .3s;
         box-shadow: inherit;
         
-        &__icon {
-            position: relative;
-        }
         &__svg {
-            height: 15rem;
-            width: 15rem;
-            fill: $color-dark-grey;
-            color: $color-dark-grey;
+            height: 8rem;
+            width: 8rem;
+            @include center-block;
+            fill: $color-grey-light;
             }
         
         &__heading-box {

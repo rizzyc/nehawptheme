@@ -24,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'drneha' ), 'drneha', '<a href="http://riz-e-designs.com">Rizwan Choudhary</a>' );
+				printf( esc_html__( 'Custom Theme: %1$s by %2$s.', 'drneha' ), 'drneha', '<a href="http://riz-e-designs.com">Rizwan Choudhary</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
