@@ -542,6 +542,47 @@ table {
       transform: translateX(0.6rem) scale(1.08);
       box-shadow: 1rem 1rem 1rem #262626; }
 
+.homepage-blog {
+  display: flex; }
+  .homepage-blog .left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    background-color: #404040;
+    color: #F2F2F2;
+    font-size: 2rem; }
+  .homepage-blog .right {
+    width: 50%;
+    padding: 10rem; }
+
+* {
+  box-sizing: border-box; }
+
+.homepage-blog-alternate {
+  margin-top: 1rem;
+  display: flex; }
+  .homepage-blog-alternate .left {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    font-size: 2rem; }
+    .homepage-blog-alternate .left .blog {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 1rem;
+      color: #F2F2F2;
+      background-color: #404040;
+      height: 14rem;
+      width: 14rem; }
+  .homepage-blog-alternate .right {
+    width: 50%;
+    padding: 10rem; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -623,11 +664,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #6dc8b9; }
+  color: #262626; }
   a:visited {
-    color: #6dc8b9; }
+    color: #262626; }
   a:hover, a:focus, a:active {
-    color: #3c52a4; }
+    color: #A6A6A6; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -638,11 +679,12 @@ a {
 --------------------------------------------------------------*/
 .menu-main-nav-container #primary-menu li {
   padding: .5rem 1rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-size: 1.12rem; }
 
 .menu-main-nav-container #primary-menu .current_page_item {
-  background-color: #3c52a4;
-  color: #6dc8b9; }
+  background-color: #A6A6A6;
+  color: #262626; }
 
 .menu-main-nav-container #primary-menu .cta {
   background-color: #6dc8b9; }
