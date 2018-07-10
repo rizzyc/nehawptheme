@@ -10,4 +10,12 @@
   max-width: 35rem;
   @include center-block;
 }
+
+.tagline {
+  text-align: center;
+  background-color: $color-dark-grey;
+  color: $color-grey-white;
+  padding: 2.3rem 0;
+  font-size: 1.39rem;
+}
 @import "footer";

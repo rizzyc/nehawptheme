@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-heading {
-	color: $color-grey;
+	color: $color-dark-grey;
 	text-align: center;
 	font-size: 2.8rem;
 }
@@ -17,3 +17,13 @@ h1, h2, h3, h4, h5, h6 {
 .main-heading--3 {
 font-family: 'Slabo 27px', serif;
 }
+
+.u-grey-bg {
+	background-color: $color-grey;
+	color: $color-grey-light;
+}
+
+.tagline--heading {
+    width: 14rem;
+    height: 14rem;
+  }

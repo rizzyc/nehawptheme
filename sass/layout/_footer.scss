@@ -2,11 +2,43 @@
     background-color: $color-grey-light;
     padding: 3rem;
     
+    // should be able to remove
     .site-info {
         a:link,
         a:visited,
         a:active {
             color: $color-grey-white;
+        }
+    }
+
+    .footer-grid {
+        display: flex;
+        justify-content: space-between;
+        
+        &__left {
+            width: 33.33%;
+            align-self: flex-end;
+        }
+        &__center {
+            text-align: center;
+            width: 33.33%;       
+        }
+        &__right {
+            width: 33.33%;
+            align-self: center;
+
+            .footer-menu {
+                list-style: none;
+                li {
+                    a:link, a:visited {
+                        color: $color-grey-white;
+
+                        &:hover, &:active {
+                            color: $color-dark-grey;
+                        }
+                    }
+                }
+            }
         }
     }
 }

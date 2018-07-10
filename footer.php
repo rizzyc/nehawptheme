@@ -14,19 +14,18 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'drneha' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'drneha' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Custom Theme: %1$s by %2$s.', 'drneha' ), 'drneha', '<a href="http://riz-e-designs.com">Rizwan Choudhary</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="footer-grid">
+			<div class="footer-grid__left">Copyright Blurb: &copy; 2018 |  Do Lorem ut dolor velit adipisicing nulla laborum.</div>
+			<div class="footer-grid__center"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="logo"></div>
+			<div class="footer-grid__right"><ul class="footer-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Neha</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

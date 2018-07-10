@@ -25,22 +25,28 @@ get_header();
 			?>
 			<section class="hero">
     <div class="hero__title">
-			<h1 class="hero__title--heading"><?php echo get_bloginfo('name') ?></h1>
-			<h2  class="hero__title--subheading">	
-				<?php 	
+			<!-- <h1 class="hero__title--heading"><?php echo get_bloginfo('name') ?></h1>			 -->
+    </div>
+	</section>
+	<section class="homepage-section-alternate">
+<div class="left">
+    &nbsp;</div>
+  <div class="right"><h2 class="main-heading--1 u-grey-bg tagline--heading">Medically Trained<br>Naturally Focused</h2>    
+  </div>
+</section>
+	<!-- <section class="tagline">
+			<h2 class="main-heading--1"><?php 	
 				$blogdesc = get_bloginfo( 'description');
 				$blogdesc = preg_replace("/, */", "<br>", $blogdesc);
 				echo $blogdesc;	
-				?>
-			</h2>
-    </div>
-	</section>
+				?></h2>
+	</section> -->
 	<section class="description">
-		<h2 class="main-heading">What is Naturopathic medicine?</h2>
+		<h2 class="main-heading--1">What is Naturopathic medicine?</h2>
 		<p>Naturopathic Medicine is a primary healthcare system that focuses on the whole body, it combines research driven modern medicine with traditional natural medicine. Naturopathy utilizes its natural therapies with the understanding that the mind, body and spirit are interconnected this helps to promote optimal health and wellbeing. Naturopathic Doctors strive to empower their patients by giving them the knowledge to prevent illness and be proactive about their health. Gentle and effective therapies are used to heal and strengthen the body to prevent invasive procedures and harsh treatments.</p>		
-		<h2 class="main-heading main-heading--1">Dr. Neha N.D. (Montserrat)</h2>
-		<h2 class="main-heading main-heading--2">Dr. Neha N.D. (Roboto Condensed)</h2>
-		<h2 class="main-heading main-heading--3">Dr. Neha N.D. (Slabo 27px)</h2>
+		<!-- <h2 class="main-heading main-heading--1">Dr. Neha N.D. (Montserrat)</h2> -->
+		<!-- <h2 class="main-heading main-heading--2">Dr. Neha N.D. (Roboto Condensed)</h2> -->
+		<!-- <h2 class="main-heading main-heading--3">Dr. Neha N.D. (Slabo 27px)</h2> -->
 
 </section>
 <section class="services">
@@ -77,18 +83,12 @@ get_header();
 			</div>
 		</div>
 </section>
-<section class="homepage-blog">
-<div class="left">our blog</div>
-  <div class="right"><h2 class="main-heading">Blog Title</h2>
-    <p>POST TEASER:Porchetta dolor rump anim, labore corned beef sed ipsum ham cow est voluptate officia occaecat tri-tip.  Picanha dolore jowl, nisi anim pork chop leberkas.  Bacon dolor landjaeger in, minim andouille consequat t-bone velit ea pork loin shankle short ribs fugiat strip steak.  Pork belly pariatur spare ribs ground round boudin.  Pig cupidatat aute tenderloin lorem capicola.  Fatback pork chop pariatur, pastrami excepteur bresaola id chuck.  Picanha ut lorem pariatur meatloaf pork loin enim sunt shoulder.</p>
-  </div>
-</section>
-<section class="homepage-blog-alternate">
+<section class="homepage-section-alternate">
 <div class="left">
     <div class="blog">
       our blog
     </div></div>
-  <div class="right"><h2 class="main-heading">Blog Title</h2>
+  <div class="right"><h2 class="main-heading--1">Blog Title</h2>
     <p>POST TEASER: Porchetta dolor rump anim, labore corned beef sed ipsum ham cow est voluptate officia occaecat tri-tip.  Picanha dolore jowl, nisi anim pork chop leberkas.  Bacon dolor landjaeger in, minim andouille consequat t-bone velit ea pork loin shankle short ribs fugiat strip steak.  Pork belly pariatur spare ribs ground round boudin.  Pig cupidatat aute tenderloin lorem capicola.  Fatback pork chop pariatur, pastrami excepteur bresaola id chuck.  Picanha ut lorem pariatur meatloaf pork loin enim sunt shoulder.</p>
   </div>
 </section>
