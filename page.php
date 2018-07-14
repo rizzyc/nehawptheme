@@ -28,12 +28,6 @@ get_header();
 			<!-- <h1 class="hero__title--heading"><?php echo get_bloginfo('name') ?></h1>			 -->
     </div>
 	</section>
-	<section class="homepage-section-alternate">
-<div class="left">
-    &nbsp;</div>
-  <div class="right"><h2 class="main-heading--1 u-grey-bg tagline--heading">Medically Trained<br>Naturally Focused</h2>    
-  </div>
-</section>
 	<!-- <section class="tagline">
 			<h2 class="main-heading--1"><?php 	
 				$blogdesc = get_bloginfo( 'description');
@@ -42,7 +36,7 @@ get_header();
 				?></h2>
 	</section> -->
 	<section class="description">
-		<h2 class="main-heading--1">What is Naturopathic medicine?</h2>
+		<h2 class="main-heading main-heading--1 u-center-text">What is Naturopathic medicine?</h2>
 		<p>Naturopathic Medicine is a primary healthcare system that focuses on the whole body, it combines research driven modern medicine with traditional natural medicine. Naturopathy utilizes its natural therapies with the understanding that the mind, body and spirit are interconnected this helps to promote optimal health and wellbeing. Naturopathic Doctors strive to empower their patients by giving them the knowledge to prevent illness and be proactive about their health. Gentle and effective therapies are used to heal and strengthen the body to prevent invasive procedures and harsh treatments.</p>		
 		<!-- <h2 class="main-heading main-heading--1">Dr. Neha N.D. (Montserrat)</h2> -->
 		<!-- <h2 class="main-heading main-heading--2">Dr. Neha N.D. (Roboto Condensed)</h2> -->
@@ -50,7 +44,7 @@ get_header();
 
 </section>
 <section class="services">
-		<h2 class="main-heading">What we offer</h2>
+		<h2 class="main-heading main-heading--1 u-center-text">What we offer</h2>
 		<div class="servicerow">
 			<div class="service">				
 				<svg class="service__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 128 160" style="enable-background:new 0 0 128 128;" xml:space="preserve">
@@ -88,7 +82,7 @@ get_header();
     <div class="blog">
       our blog
     </div></div>
-  <div class="right"><h2 class="main-heading--1">Blog Title</h2>
+  <div class="right"><h2 class="main-heading main-heading--1">Blog Title</h2>
     <p>POST TEASER: Porchetta dolor rump anim, labore corned beef sed ipsum ham cow est voluptate officia occaecat tri-tip.  Picanha dolore jowl, nisi anim pork chop leberkas.  Bacon dolor landjaeger in, minim andouille consequat t-bone velit ea pork loin shankle short ribs fugiat strip steak.  Pork belly pariatur spare ribs ground round boudin.  Pig cupidatat aute tenderloin lorem capicola.  Fatback pork chop pariatur, pastrami excepteur bresaola id chuck.  Picanha ut lorem pariatur meatloaf pork loin enim sunt shoulder.</p>
   </div>
 </section>

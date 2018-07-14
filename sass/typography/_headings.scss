@@ -5,8 +5,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-heading {
 	color: $color-dark-grey;
-	text-align: center;
-	font-size: 2.8rem;
+	font-size: 1.8rem;
 }
 .main-heading--1 {
 	font-family: 'Montserrat', sans-serif;
@@ -22,8 +21,22 @@ font-family: 'Slabo 27px', serif;
 	background-color: $color-grey;
 	color: $color-grey-light;
 }
+.u-purble-blue-bg {
+	background-color: $color-purple-blue;
+	color: $color-grey-light;
+}
+
+.u-center-text {
+	text-align: center;
+}
 
 .tagline--heading {
-    width: 14rem;
-    height: 14rem;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .tagline--box {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
   }

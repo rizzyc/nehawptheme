@@ -21,7 +21,7 @@
     box-sizing: border-box;
   }
   .homepage-section-alternate {
-    margin-top: 1rem;
+    margin: 2rem 0;
     display: flex;
     .left {
       width: 50%;
@@ -36,14 +36,13 @@
           align-items: center;      
           padding-right: 1rem;
           color: $color-grey-white;
-        background-color: $color-grey;
+        background-color: $color-purple-blue;
         height: 14rem;
         width: 14rem;
       }
     }
     .right {
       width: 50%;
-      padding: 10rem;    
     }
   }
 

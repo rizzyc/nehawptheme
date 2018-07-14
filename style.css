@@ -364,8 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-heading {
   color: #555353;
-  text-align: center;
-  font-size: 2.8rem; }
+  font-size: 1.8rem; }
 
 .main-heading--1 {
   font-family: 'Montserrat', sans-serif; }
@@ -380,9 +379,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #aca298;
   color: #f0f0f0; }
 
+.u-purble-blue-bg {
+  background-color: #8aabff;
+  color: #f0f0f0; }
+
+.u-center-text {
+  text-align: center; }
+
 .tagline--heading {
-  width: 14rem;
-  height: 14rem; }
+  width: 16rem;
+  height: 16rem; }
+
+.tagline--box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 p {
   margin-bottom: 1.5em; }
@@ -569,7 +580,7 @@ table {
   box-sizing: border-box; }
 
 .homepage-section-alternate {
-  margin-top: 1rem;
+  margin: 2rem 0;
   display: flex; }
   .homepage-section-alternate .left {
     width: 50%;
@@ -584,12 +595,11 @@ table {
       align-items: center;
       padding-right: 1rem;
       color: #F2F2F2;
-      background-color: #aca298;
+      background-color: #8aabff;
       height: 14rem;
       width: 14rem; }
   .homepage-section-alternate .right {
-    width: 50%;
-    padding: 10rem; }
+    width: 50%; }
 
 /*--------------------------------------------------------------
 # Forms
