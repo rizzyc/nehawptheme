@@ -379,7 +379,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #aca298;
   color: #f0f0f0; }
 
-.u-purble-blue-bg {
+.u-purple-blue {
+  color: #8aabff; }
+
+.u-purple-blue-bg {
   background-color: #8aabff;
   color: #f0f0f0; }
 
@@ -516,10 +519,10 @@ table {
   margin: 2rem 0;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap; }
   .servicerow .service {
-    width: 25rem;
+    width: 20rem;
     margin: 1.5rem 0;
     min-height: 32.5rem;
     border-radius: 3px;
@@ -534,6 +537,8 @@ table {
       margin-left: auto;
       margin-right: auto;
       fill: #f0f0f0; }
+      .servicerow .service__svg--attrib {
+        opacity: 0; }
     .servicerow .service__heading-box {
       min-height: 10rem;
       background-size: cover;
@@ -557,6 +562,30 @@ table {
     .servicerow .service__text {
       padding: 0 1rem;
       line-height: 1.8; }
+      .servicerow .service__text h3 {
+        font-size: 1.15rem; }
+      .servicerow .service__text--list1 {
+        font-size: .85rem;
+        line-height: 1.45;
+        margin: 0; }
+      .servicerow .service__text--list2 {
+        font-size: .85rem;
+        line-height: 1.85;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center; }
+      .servicerow .service__text--list3 {
+        font-size: .85rem;
+        line-height: 1.85;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left; }
+        .servicerow .service__text--list3 ::before {
+          content: "\000BB";
+          margin-right: .7rem;
+          color: #8aabff; }
     .servicerow .service:hover {
       transform: translateX(0.6rem) scale(1.08);
       box-shadow: 1rem 1rem 1rem #555353; }
@@ -928,6 +957,9 @@ a {
     .site-footer .footer-grid__center {
       text-align: center;
       width: 33.33%; }
+      .site-footer .footer-grid__center h2 {
+        font-size: 1.3rem;
+        font-weight: 100; }
     .site-footer .footer-grid__right {
       width: 33.33%;
       align-self: center; }

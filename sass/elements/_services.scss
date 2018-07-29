@@ -6,11 +6,11 @@
     margin: 2rem 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 
     .service {
-        width: 25rem;
+        width: 20rem;
         margin: 1.5rem 0;
         min-height: 32.5rem;
         border-radius: 3px;
@@ -24,6 +24,9 @@
             width: 8rem;
             @include center-block;
             fill: $color-grey-light;
+            &--attrib {
+                opacity: 0;
+            }
             }
         
         &__heading-box {
@@ -62,6 +65,35 @@
         &__text {
             padding: 0 1rem;
             line-height: 1.8;
+            h3 {
+                font-size: 1.15rem;
+            }
+            &--list1 {
+                font-size: .85rem;
+                line-height: 1.45;
+                margin: 0;
+            }
+            &--list2 {
+                font-size: .85rem;
+                line-height: 1.85;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+            &--list3 {
+                font-size: .85rem;
+                line-height: 1.85;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: left;
+                ::before {
+                    content: "\000BB";
+                    margin-right: .7rem;
+                    color: $color-purple-blue;
+                }
+            }
         }
 
         &:hover {

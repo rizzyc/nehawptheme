@@ -21,7 +21,11 @@
         }
         &__center {
             text-align: center;
-            width: 33.33%;       
+            width: 33.33%;
+            h2 {
+                font-size: 1.3rem;
+                font-weight: 100;
+            }       
         }
         &__right {
             width: 33.33%;
