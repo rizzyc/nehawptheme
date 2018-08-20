@@ -8,6 +8,9 @@
     .current_page_item {
       background-color: $color__link-hover;
       color: $color__link;
+      :hover {
+        color: $color-grey-white;
+      }
     }
     
     .cta {

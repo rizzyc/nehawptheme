@@ -493,28 +493,6 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
-.hero, #hero {
-  height: 85vh;
-  background-image: url("images/banner1.jpg)");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .hero__title, #hero__title {
-    width: 35rem;
-    color: #F2F2F2;
-    padding: 1.7rem;
-    margin-left: 25%; }
-    .hero__title--heading, #hero__title--heading {
-      color: #F2F2F2;
-      font-weight: 700;
-      font-size: 4rem; }
-    .hero__title--subheading, #hero__title--subheading {
-      font-size: 2.2rem;
-      font-style: italic;
-      color: #f0f0f0; }
-
 .servicerow {
   margin: 2rem 0;
   display: flex;
@@ -522,7 +500,7 @@ table {
   align-items: flex-start;
   flex-wrap: wrap; }
   .servicerow .service {
-    width: 20rem;
+    width: 18rem;
     margin: 1.5rem 0;
     min-height: 32.5rem;
     border-radius: 3px;
@@ -715,7 +693,7 @@ a {
   a:visited {
     color: #555353; }
   a:hover, a:focus, a:active {
-    color: #f0f0f0; }
+    color: #8aabff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -730,8 +708,10 @@ a {
   font-size: 1.12rem; }
 
 .menu-main-nav-container #primary-menu .current_page_item {
-  background-color: #f0f0f0;
+  background-color: #8aabff;
   color: #555353; }
+  .menu-main-nav-container #primary-menu .current_page_item :hover {
+    color: #F2F2F2; }
 
 .menu-main-nav-container #primary-menu .cta {
   background-color: #6dc8b9; }
@@ -1059,3 +1039,8 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.hero-slider__slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh !important; }

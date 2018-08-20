@@ -25,5 +25,8 @@
     "postcss-cli": "^5.0.0"
   },
   "author": "Rizwan Choudhary",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.24.6"
+  }
 }
