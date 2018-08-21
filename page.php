@@ -39,6 +39,7 @@
       </ul>
     </div>
       <?php } ?>
+    <h2 class="headiline headline--medium headline--post-title"><?php the_title(); ?></h2>
 
     <div class="generic-content">
       <?php the_content(); ?> 
