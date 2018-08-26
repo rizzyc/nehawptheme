@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-heading {
 	color: $color-dark-grey;
 	font-size: 1.8rem;
+	@media screen and (max-width: 37.5rem) {
+		font-size: 1.2rem;
+	}
 }
 .main-heading--1 {
 	font-family: 'Montserrat', sans-serif;
@@ -43,3 +46,10 @@ font-family: 'Slabo 27px', serif;
 	  justify-content: center;
 	  align-items: center;
   }
+
+  .headline {
+	  &--post-title {
+		  padding: 2rem 4rem;
+		}
+	}
+	

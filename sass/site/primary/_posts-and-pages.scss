@@ -20,3 +20,54 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.container--narrow {
+	max-width: 44rem;
+	margin: 0 auto;
+	@media screen and (max-width:37.5rem){
+		width: 95vw;
+	}
+}
+.container--wide {
+	max-width: 90rem;
+	margin: 0 auto;
+	@media screen and (max-width:89.9375rem){
+		.service {
+			width: 14rem;
+		}
+	}
+	@media screen and (max-width:69.9375rem){
+		.service {
+			width: 12rem;
+			&__text--list3 {
+				font-size: .75rem;
+			}
+		}
+	}
+	@media screen and (max-width:59.9375rem){
+		.service {
+			width: 20rem;
+		}
+	}
+	
+}
+.single-post {
+	.category-health-hub {
+		max-width: 44rem;
+		margin: 0 auto;
+	}
+}
+// Contact Page
+.address {
+	display: flex;
+	@media screen and (max-width: 37.5rem){
+		flex-direction: column;
+	}
+
+	&__details {
+		flex: 1;
+	}
+	&__map {
+		flex: 1;
+	}
+}

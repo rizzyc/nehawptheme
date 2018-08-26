@@ -3,5 +3,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 75vh !important;
+
+        @media screen and (max-width: 37.5rem) {
+            height: 20rem !important;
+            overflow: hidden;
+        }
+        @media screen and (max-width: 25rem) {
+            height: 15rem !important;
+            background-position: bottom right;
+        }
     }
 }

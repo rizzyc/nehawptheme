@@ -9,15 +9,23 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 36rem){
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .service {
         width: 18rem;
         margin: 1.5rem 0;
-        min-height: 32.5rem;
         border-radius: 3px;
         overflow: hidden;
         background-color: white;
         transition: all .3s;
         box-shadow: inherit;
+        @media screen and (max-width: 36rem){
+            width: 95vw;
+            flex: 1 1 auto;
+        }
         
         &__svg {
             height: 8rem;
@@ -97,8 +105,8 @@
         }
 
         &:hover {
-            transform: translateX(.6rem) scale(1.08);
-            box-shadow: 1rem 1rem 1rem $color-dark-grey;
+            transform: translateY(-.6rem) scale(1.01);
+            box-shadow: .5rem .5rem .5rem rgba($color-dark-grey, .15);
         }
     }
 }

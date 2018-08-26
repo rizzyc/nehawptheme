@@ -94,15 +94,25 @@ get_header();
 			</div>
 		</div>
 </section>
-<section class="homepage-section-alternate">
-<div class="left">
-    <div class="blog">
-      our blog
-    </div></div>
-  <div class="right"><h2 class="main-heading main-heading--1">Blog Title</h2>
-    <p>POST TEASER: Porchetta dolor rump anim, labore corned beef sed ipsum ham cow est voluptate officia occaecat tri-tip.  Picanha dolore jowl, nisi anim pork chop leberkas.  Bacon dolor landjaeger in, minim andouille consequat t-bone velit ea pork loin shankle short ribs fugiat strip steak.  Pork belly pariatur spare ribs ground round boudin.  Pig cupidatat aute tenderloin lorem capicola.  Fatback pork chop pariatur, pastrami excepteur bresaola id chuck.  Picanha ut lorem pariatur meatloaf pork loin enim sunt shoulder.</p>
-  </div>
-</section>
+<?php  
+	$homepagePosts = new WP_Query( array(
+		'posts_per_page' => 1, 'category_name' => 'health-hub'
+		) );
+		while($homepagePosts->have_posts()) {
+			$homepagePosts->the_post();?>
+		<section class="homepage-section-alternate">
+		<div class="left">
+			<div class="blog">
+			our blog
+			</div></div>
+		<div class="right"><h2 class="main-heading main-heading--1"><a href="<?php permalink_link() ?>"><?php the_title() ?></a></h2>
+		<p><?php echo wp_trim_words(get_the_content(), 18) ?></p> 
+		<p><a href="<?php permalink_link() ?>" >Read more</a></p>
+		</div>
+		</section>
+	<?php
+	} wp_reset_postdata();
+?>
 			<?php 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

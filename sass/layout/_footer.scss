@@ -14,28 +14,34 @@
     .footer-grid {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 37.5rem) {
+            flex-direction: column;
+        }
         
         &__left {
-            width: 33.33%;
+            flex: 1;
             align-self: flex-end;
         }
         &__center {
             text-align: center;
-            width: 33.33%;
+            flex: 2;
             h2 {
                 font-size: 1.3rem;
                 font-weight: 100;
             }       
+            @media screen and (max-width: 37.5rem) {
+                order: -1;
+            }
         }
         &__right {
-            width: 33.33%;
+            flex: 1;
             align-self: center;
 
             .footer-menu {
                 list-style: none;
                 li {
                     a:link, a:visited {
-                        color: $color-grey-white;
+                        color: $color-grey-hover;
 
                         &:hover, &:active {
                             color: $color-dark-grey;
