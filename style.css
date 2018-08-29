@@ -1,5 +1,5 @@
 /*!
-Theme Name: drneha
+Theme Name: Dr Neha - custom theme
 Theme URI: http://underscores.me/
 Author: Rizwan Choudhary
 Author URI: http://riz-e-designs.com
@@ -1041,6 +1041,9 @@ a {
           .site-footer .footer-grid__right .footer-menu li a:link:hover, .site-footer .footer-grid__right .footer-menu li a:link:active, .site-footer .footer-grid__right .footer-menu li a:visited:hover, .site-footer .footer-grid__right .footer-menu li a:visited:active {
             color: #555353; }
 
+.not-found {
+  min-height: 22rem; }
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -1130,16 +1133,3 @@ object {
 
 .gallery-caption {
   display: block; }
-
-.hero-slider__slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh !important; }
-  @media screen and (max-width: 37.5rem) {
-    .hero-slider__slide {
-      height: 20rem !important;
-      overflow: hidden; } }
-  @media screen and (max-width: 25rem) {
-    .hero-slider__slide {
-      height: 15rem !important;
-      background-position: bottom right; } }

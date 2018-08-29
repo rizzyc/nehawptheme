@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footer-grid">
-			<div class="footer-grid__left">Copyright Blurb: &copy; 2018 |  Do Lorem ut dolor velit adipisicing nulla laborum.</div>
+			<div class="footer-grid__left">Copyright Blurb: &copy; 2018</div>
 			<div class="footer-grid__center">  <h2 class="main-heading--2">Medically Trained | Naturally Focused</h2>  </div>
 			<div class="footer-grid__right">
 				<!-- <ul class="footer-menu">

@@ -36,14 +36,14 @@ get_header();
 				?></h2>
 	</section> -->
 	<div class="hero-slider">
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/banner1.jpg') ?>);">
-  <!-- <img src="<?php echo get_theme_file_uri('images/banner1.jpg') ?>" alt="banner image"> -->
+  <div class="hero-slider__slide">
+  <img src="<?php echo get_theme_file_uri('images/banner1-25x10-c.jpg') ?>" alt="banner1-25x10-cimage">
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/banner2.jpg') ?>);">
-  <!-- <img src="<?php echo get_theme_file_uri('images/banner2.jpg') ?>" alt="banner image"> -->
+  <div class="hero-slider__slide">
+  <img src="<?php echo get_theme_file_uri('images/banner2-25x10-c.jpg') ?>" alt="banner1-25x10-cimage">
   </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/banner3.jpg') ?>);">
-  <!-- <img src="<?php echo get_theme_file_uri('images/banner3.jpg') ?>" alt="banner image"> -->
+  <div class="hero-slider__slide">
+  <img src="<?php echo get_theme_file_uri('images/banner3-25x10-c.jpg') ?>" alt="banner image">
   </div>
 </div>
 	<section class="description">
@@ -103,7 +103,7 @@ get_header();
 		<section class="homepage-section-alternate">
 		<div class="left">
 			<div class="blog">
-			our blog
+			Health Hub
 			</div></div>
 		<div class="right"><h2 class="main-heading main-heading--1"><a href="<?php permalink_link() ?>"><?php the_title() ?></a></h2>
 		<p><?php echo wp_trim_words(get_the_content(), 18) ?></p> 
