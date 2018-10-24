@@ -1,5 +1,5 @@
 /*!
-Theme Name: drneha
+Theme Name: Dr Neha - custom theme
 Theme URI: http://underscores.me/
 Author: Rizwan Choudhary
 Author URI: http://riz-e-designs.com
@@ -365,6 +365,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-heading {
   color: #555353;
   font-size: 1.8rem; }
+  @media screen and (max-width: 37.5rem) {
+    .main-heading {
+      font-size: 1.2rem; } }
 
 .main-heading--1 {
   font-family: 'Montserrat', sans-serif; }
@@ -397,6 +400,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.headline--post-title {
+  padding: 2rem 4rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -499,15 +505,22 @@ table {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap; }
+  @media screen and (max-width: 36rem) {
+    .servicerow {
+      flex-direction: column;
+      align-items: center; } }
   .servicerow .service {
     width: 18rem;
     margin: 1.5rem 0;
-    min-height: 32.5rem;
     border-radius: 3px;
     overflow: hidden;
     background-color: white;
     transition: all .3s;
     box-shadow: inherit; }
+    @media screen and (max-width: 36rem) {
+      .servicerow .service {
+        width: 95vw;
+        flex: 1 1 auto; } }
     .servicerow .service__svg {
       height: 8rem;
       width: 8rem;
@@ -565,8 +578,8 @@ table {
           margin-right: .7rem;
           color: #8aabff; }
     .servicerow .service:hover {
-      transform: translateX(0.6rem) scale(1.08);
-      box-shadow: 1rem 1rem 1rem #555353; }
+      transform: translateY(-0.6rem) scale(1.01);
+      box-shadow: 0.5rem 0.5rem 0.5rem rgba(85, 83, 83, 0.15); }
 
 .homepage-blog {
   display: flex; }
@@ -607,6 +620,8 @@ table {
       width: 14rem; }
   .homepage-section-alternate .right {
     width: 50%; }
+    .homepage-section-alternate .right p {
+      max-width: 35rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -637,6 +652,21 @@ input[type="submit"] {
   input[type="submit"]:active,
   input[type="submit"]:focus {
     border-color: #aaa #bbb #bbb; }
+
+.btn:link {
+  display: inline-block;
+  padding: .9rem 2rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  background-color: #8aabff;
+  color: #F2F2F2;
+  line-height: 1.5;
+  transition: all .3s;
+  text-decoration: none; }
+  .btn:link:hover, .btn:link:active {
+    background-color: #3c52a4;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(85, 83, 83, 0.15);
+    transform: translateY(-0.5rem); }
 
 input[type="text"],
 input[type="email"],
@@ -706,6 +736,14 @@ a {
   padding: .5rem 1rem;
   border-radius: 3px;
   font-size: 1.12rem; }
+  @media screen and (max-width: 63.6875rem) {
+    .menu-main-nav-container #primary-menu li {
+      font-size: .92rem;
+      padding: .5 .2rem; } }
+  @media screen and (max-width: 37.5rem) {
+    .menu-main-nav-container #primary-menu li {
+      float: none;
+      width: 100vw; } }
 
 .menu-main-nav-container #primary-menu .current_page_item {
   background-color: #8aabff;
@@ -753,7 +791,21 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  background-color: #8aabff;
+  border: 0;
+  width: 100vw;
+  text-align: left;
+  color: #F2F2F2;
+  padding: 1.2rem .9rem;
+  font-weight: bold; }
+  .menu-toggle a:link, .menu-toggle a:visited,
+  .main-navigation.toggled ul a:link,
+  .main-navigation.toggled ul a:visited {
+    color: #F2F2F2; }
+  .menu-toggle a:hover,
+  .main-navigation.toggled ul a:hover {
+    color: #706962; }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
@@ -898,6 +950,42 @@ a {
   clear: both;
   margin: 0 0 1.5em; }
 
+.container--narrow {
+  max-width: 44rem;
+  margin: 0 auto; }
+  @media screen and (max-width: 37.5rem) {
+    .container--narrow {
+      width: 95vw; } }
+
+.container--wide {
+  max-width: 90rem;
+  margin: 0 auto; }
+  @media screen and (max-width: 89.9375rem) {
+    .container--wide .service {
+      width: 14rem; } }
+  @media screen and (max-width: 69.9375rem) {
+    .container--wide .service {
+      width: 12rem; }
+      .container--wide .service__text--list3 {
+        font-size: .75rem; } }
+  @media screen and (max-width: 59.9375rem) {
+    .container--wide .service {
+      width: 20rem; } }
+
+.single-post .category-health-hub, .single-post .post-navigation {
+  max-width: 44rem;
+  margin: 0 auto; }
+
+.address {
+  display: flex; }
+  @media screen and (max-width: 37.5rem) {
+    .address {
+      flex-direction: column; } }
+  .address__details {
+    flex: 1; }
+  .address__map {
+    flex: 1; }
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
@@ -907,12 +995,21 @@ a {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto; }
+  @media screen and (max-width: 52.5625rem) {
+    .site-header {
+      flex-direction: column;
+      margin-bottom: 1rem; } }
+  .site-header .site-branding {
+    max-width: 24rem; }
 
 .description {
   max-width: 35rem;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 37.5rem) {
+    .description {
+      width: 95vw; } }
 
 .tagline {
   text-align: center;
@@ -920,6 +1017,9 @@ a {
   color: #F2F2F2;
   padding: 2.3rem 0;
   font-size: 1.39rem; }
+
+.page-section p {
+  line-height: 1.9; }
 
 .site-footer {
   background-color: #f0f0f0;
@@ -930,25 +1030,34 @@ a {
     color: #F2F2F2; }
   .site-footer .footer-grid {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 57.5rem) {
+      .site-footer .footer-grid {
+        flex-direction: column;
+        align-items: center; } }
     .site-footer .footer-grid__left {
-      width: 33.33%;
-      align-self: flex-end; }
+      flex: 1; }
     .site-footer .footer-grid__center {
       text-align: center;
-      width: 33.33%; }
+      flex: 2; }
       .site-footer .footer-grid__center h2 {
         font-size: 1.3rem;
         font-weight: 100; }
+      @media screen and (max-width: 57.5rem) {
+        .site-footer .footer-grid__center {
+          order: -1; } }
     .site-footer .footer-grid__right {
-      width: 33.33%;
-      align-self: center; }
+      flex: 1; }
       .site-footer .footer-grid__right .footer-menu {
         list-style: none; }
         .site-footer .footer-grid__right .footer-menu li a:link, .site-footer .footer-grid__right .footer-menu li a:visited {
-          color: #F2F2F2; }
+          color: #706962; }
           .site-footer .footer-grid__right .footer-menu li a:link:hover, .site-footer .footer-grid__right .footer-menu li a:link:active, .site-footer .footer-grid__right .footer-menu li a:visited:hover, .site-footer .footer-grid__right .footer-menu li a:visited:active {
             color: #555353; }
+
+.not-found {
+  min-height: 22rem; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1039,8 +1148,3 @@ object {
 
 .gallery-caption {
   display: block; }
-
-.hero-slider__slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh !important; }

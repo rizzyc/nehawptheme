@@ -20,3 +20,25 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.btn {
+	&:link {
+		display: inline-block;
+		padding: .9rem 2rem;
+		border-radius: 3px;
+		font-size: 1.2rem;
+		background-color: $color-purple-blue;
+		color: $color-grey-white;
+		line-height: 1.5;
+		transition: all .3s;
+		text-decoration: none;
+		&:hover, &:active {
+			background-color: $color-secondary;
+			box-shadow: .5rem .5rem .5rem rgba($color-dark-grey, .15);
+			transform: translateY(-.5rem); 
+		}
+	}
+	&--blog:link {
+		padding: .4rem 1rem;
+	}
+}

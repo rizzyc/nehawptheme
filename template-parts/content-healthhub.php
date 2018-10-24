@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found
+ * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -9,43 +9,51 @@
 
 ?>
 
-<section class="no-results not-found container container--narrow page-section">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'There are currently no articles posted yet.', 'drneha' ); ?></h1>
-	</header><!-- .page-header -->
-
-	<div class="page-content">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
 		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) :
-
-			printf(
-				'<p>' . wp_kses(
-					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'drneha' ),
-					array(
-						'a' => array(
-							'href' => array(),
-						),
-					)
-				) . '</p>',
-				esc_url( admin_url( 'post-new.php' ) )
-			);
-
-		elseif ( is_search() ) :
-			?>
-
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'drneha' ); ?></p>
-			<?php
-			get_search_form();
-
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			?>
-
-			<p><?php esc_html_e( 'Check back, we will be adding articles to help you soon!', 'drneha' ); ?></p>
-			<?php
-			get_search_form();
-
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
+
+		if ( 'post' === get_post_type() ) :
+			?>
+			<div class="entry-meta">
+				<?php
+				drneha_posted_on();
+				drneha_posted_by();
+				?>
+			</div><!-- .entry-meta -->
+		<?php endif; ?>
+	</header><!-- .entry-header -->
+
+	<?php drneha_post_thumbnail(); ?>
+
+	<div class="entry-content">
+		<?php
+		the_content( sprintf(
+			wp_kses(
+				/* translators: %s: Name of current post. Only visible to screen readers */
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'drneha' ),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		) );
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'drneha' ),
+			'after'  => '</div>',
+		) );
 		?>
-	</div><!-- .page-content -->
-</section><!-- .no-results -->
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<?php drneha_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-<?php the_ID(); ?> -->

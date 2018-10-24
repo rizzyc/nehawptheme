@@ -14,13 +14,14 @@
     .footer-grid {
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width: 37.5rem) {
+        align-items: center;
+        @media screen and (max-width: 57.5rem) {
             flex-direction: column;
+                align-items: center;
         }
         
         &__left {
             flex: 1;
-            align-self: flex-end;
         }
         &__center {
             text-align: center;
@@ -29,13 +30,12 @@
                 font-size: 1.3rem;
                 font-weight: 100;
             }       
-            @media screen and (max-width: 37.5rem) {
+            @media screen and (max-width: 57.5rem) {
                 order: -1;
             }
         }
         &__right {
             flex: 1;
-            align-self: center;
 
             .footer-menu {
                 list-style: none;
@@ -51,4 +51,8 @@
             }
         }
     }
+}
+// Entry footer below the blog posts
+.entry-footer {
+    padding: 2rem 0;
 }

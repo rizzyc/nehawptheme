@@ -56,7 +56,6 @@
 						<li>Menopause</li> 
 						<li>Premenstrual Syndrome</li> 
 						<li>Endometriosis</li> 
-						<li>Uterine fibn)ids</li>
 						<li>Polycystic Ovarian Syndrome</li>
 						<li>Candida, HPV, Bacterial vaginosls</li>
 						<li>Urinary Incontinence</li>
@@ -77,7 +76,7 @@
 						<li>Asthma</li> 
 						<li>Attention Deficit (Hyperactive) Disorder (ADD or ADHD)</li> 
 						<li>Diabetes Mellitus</li> 
-						<li>Earlnfections</li> 
+						<li>Ear Infections</li> 
 						<li>Eczema</li> 
 						<li>Head Lice</li> 
 						<li>Hypothyroid</li> 
@@ -122,8 +121,7 @@
 					<ul class="service__text--list3">
 						<li>Prostate disorders (Prostatitis/BPH)</li>
 						<li>Low libido</li>
-						<li>Erectile</li>
-						<li>Dysfunction</li>
+						<li>Erectile Dysfunction</li>
 					</ul>
 				</div>
 			</div>
@@ -139,7 +137,7 @@
 						<li>High Blood Pressure/Hypertension</li>
 						<li>High Cholesterol</li>
 						<li>High Tryglycerides</li>
-						<li>Low BloodPressure/Hypotension</li>
+						<li>Low Blood Pressure/Hypotension</li>
 						<li>Orthostatic Hypertension</li>
 					</ul>
 				</div>
@@ -192,7 +190,7 @@
 						<li>Arthritis</li>
 						<li>Osteoporosis</li>
 						<li>Sports injuries (sprains, strains, fractures, trauma)</li>
-						<li>Chronic Fatigue Syndrome Fibromyalgia</li>
+						<li>Chronic Fatigue Syndrome, Fibromyalgia</li>
 						<li>Tension Headaches</li>
 						<li>Chronic Back Pain</li>
 						<li>Muscular Tension</li>
@@ -201,12 +199,12 @@
 						<li>Carpal Tunnel Syndrome</li>
 						<li>Foot Pain</li>
 						<li>Hip Pain</li>
-						<li>Joint Pain/Stiffness Knee Pain</li>
+						<li>Joint Pain/Stiffness </li>
+						<li>Knee Pain</li>
 						<li>Muscle Pain</li>
-						<li>Plantar Fascitis</li>
+						<li>Plantar Fasciitis</li>
 						<li>Shoulder Pain</li>
-						<li>Tempo mandibular</li>
-						<li>Joint Dysfunction (TMJ)</li>
+						<li>Tempo mandibular Joint Dysfunction (TMJ)</li>
 						<li>Tendonitis</li>
 					</ul>
 			</div>
@@ -244,7 +242,7 @@
 						<li>Alzheimer's Disease</li>
 						<li>Dizziness</li>
 						<li>Lyme Disease</li>
-						<li>RestlessLeg Syndrome</li>
+						<li>Restless Leg Syndrome</li>
 						<li>Seizure Disorders</li>
 						<li>Syncope</li>
 						<li>Vertigo</li>
